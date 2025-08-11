@@ -1,0 +1,423 @@
+2025-08-08 12:57:11,261 - desktop_app.auth - INFO - Using OAuth credentials from: D:\Projects2.0\Wellness.ai\configs\client_secret_826138217044-p1qiu2ohq2mh2cn12k9phavhv7vim98q.apps.googleusercontent.com.json
+2025-08-08 12:57:11,262 - desktop_app.metrics - INFO - Performance monitor initialized with 2.0s interval
+2025-08-08 12:57:11,273 - desktop_app.sync - INFO - Local database initialized
+2025-08-08 12:57:11,274 - desktop_app.sync - INFO - AWS credentials not configured, using local storage only
+2025-08-08 12:57:11,297 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754638031
+2025-08-08 12:57:11,297 - desktop_app.eye_tracker_ui - INFO - Production eye tracker initialized successfully
+2025-08-08 12:57:11,297 - desktop_app.eye_tracker_ui - INFO - Production EyeTrackerUI initialized
+2025-08-08 12:57:11,297 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754638031
+2025-08-08 12:57:11,298 - __main__ - INFO - Core components initialized successfully
+2025-08-08 12:57:11,362 - __main__ - INFO - Wellness at Work application initialized successfully
+2025-08-08 12:57:11,455 - desktop_app.metrics - INFO - Performance monitoring started
+2025-08-08 12:57:11,456 - desktop_app.sync - INFO - Sync manager started
+2025-08-08 12:57:11,456 - __main__ - INFO - Application started successfully
+2025-08-08 12:57:52,202 - desktop_app.auth - INFO - Using OAuth credentials from: D:\Projects2.0\Wellness.ai\configs\client_secret_826138217044-p1qiu2ohq2mh2cn12k9phavhv7vim98q.apps.googleusercontent.com.json
+2025-08-08 12:57:52,202 - desktop_app.metrics - INFO - Performance monitor initialized with 2.0s interval
+2025-08-08 12:57:52,203 - desktop_app.sync - INFO - Local database initialized
+2025-08-08 12:57:52,204 - desktop_app.sync - INFO - AWS credentials not configured, using local storage only
+2025-08-08 12:57:52,209 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754638072
+2025-08-08 12:57:52,210 - desktop_app.eye_tracker_ui - INFO - Production eye tracker initialized successfully
+2025-08-08 12:57:52,210 - desktop_app.eye_tracker_ui - INFO - Production EyeTrackerUI initialized
+2025-08-08 12:57:52,210 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754638072
+2025-08-08 12:57:52,210 - __main__ - INFO - Core components initialized successfully
+2025-08-08 12:57:52,245 - __main__ - INFO - Wellness at Work application initialized successfully
+2025-08-08 12:57:52,314 - desktop_app.metrics - INFO - Performance monitoring started
+2025-08-08 12:57:52,315 - desktop_app.sync - INFO - Sync manager started
+2025-08-08 12:57:52,315 - __main__ - INFO - Application started successfully
+2025-08-08 13:00:30,346 - desktop_app.auth - INFO - Using OAuth credentials from: D:\Projects2.0\Wellness.ai\configs\client_secret_826138217044-p1qiu2ohq2mh2cn12k9phavhv7vim98q.apps.googleusercontent.com.json
+2025-08-08 13:00:30,347 - desktop_app.metrics - INFO - Performance monitor initialized with 2.0s interval
+2025-08-08 13:00:30,347 - desktop_app.sync - INFO - Local database initialized
+2025-08-08 13:00:30,348 - desktop_app.sync - INFO - AWS credentials not configured, using local storage only
+2025-08-08 13:00:30,353 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754638230
+2025-08-08 13:00:30,353 - desktop_app.eye_tracker_ui - INFO - Production eye tracker initialized successfully
+2025-08-08 13:00:30,354 - desktop_app.eye_tracker_ui - INFO - Production EyeTrackerUI initialized
+2025-08-08 13:00:30,354 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754638230
+2025-08-08 13:00:30,354 - __main__ - INFO - Core components initialized successfully
+2025-08-08 13:00:30,399 - __main__ - INFO - Wellness at Work application initialized successfully
+2025-08-08 13:00:30,465 - desktop_app.metrics - INFO - Performance monitoring started
+2025-08-08 13:00:30,466 - performance_spikes - WARNING - CPU spike: 100.0% (threshold: 80.0%)
+2025-08-08 13:00:30,466 - desktop_app.sync - INFO - Sync manager started
+2025-08-08 13:00:30,466 - __main__ - INFO - Application started successfully
+2025-08-08 13:00:32,265 - desktop_app.auth - INFO - Starting authentication process...
+2025-08-08 13:00:32,384 - desktop_app.auth - INFO - Loaded existing credentials: True
+2025-08-08 13:00:32,790 - desktop_app.auth - INFO - Credentials saved successfully
+2025-08-08 13:00:32,790 - desktop_app.auth - INFO - Credentials saved to secure storage
+2025-08-08 13:00:32,790 - desktop_app.auth - INFO - Using existing credentials
+2025-08-08 13:00:32,959 - desktop_app.auth - INFO - Successfully retrieved user info for: samay.m2504@gmail.com
+2025-08-08 13:00:36,463 - desktop_app.eye_tracker - INFO - Starting eye tracking...
+2025-08-08 13:00:36,464 - desktop_app.eye_tracker - INFO - Initializing camera...
+2025-08-08 13:00:36,464 - desktop_app.eye_tracker - INFO - Trying camera index 0 with backend 700
+2025-08-08 13:00:39,395 - desktop_app.eye_tracker - INFO - Camera configured successfully
+2025-08-08 13:00:39,793 - desktop_app.eye_tracker - INFO - Camera verified: 640x480
+2025-08-08 13:00:39,793 - desktop_app.eye_tracker - INFO - Camera initialized successfully: index 0, backend 700
+2025-08-08 13:00:39,800 - desktop_app.eye_tracker - INFO - MediaPipe Face Mesh initialized
+2025-08-08 13:00:39,802 - desktop_app.eye_tracker - INFO - Tracking loop started
+2025-08-08 13:00:39,802 - desktop_app.eye_tracker - INFO - Eye tracking started successfully
+2025-08-08 13:00:41,281 - __main__ - ERROR - Error handling blink detection: BlinkEvent.__init__() got an unexpected keyword argument 'open_closed'
+2025-08-08 13:00:42,305 - __main__ - ERROR - Error handling blink detection: BlinkEvent.__init__() got an unexpected keyword argument 'open_closed'
+2025-08-08 13:00:43,185 - __main__ - ERROR - Error handling blink detection: BlinkEvent.__init__() got an unexpected keyword argument 'open_closed'
+2025-08-08 13:00:44,080 - __main__ - ERROR - Error handling blink detection: BlinkEvent.__init__() got an unexpected keyword argument 'open_closed'
+2025-08-08 13:00:44,881 - __main__ - ERROR - Error handling blink detection: BlinkEvent.__init__() got an unexpected keyword argument 'open_closed'
+2025-08-08 13:00:45,713 - __main__ - ERROR - Error handling blink detection: BlinkEvent.__init__() got an unexpected keyword argument 'open_closed'
+2025-08-08 13:00:46,577 - __main__ - ERROR - Error handling blink detection: BlinkEvent.__init__() got an unexpected keyword argument 'open_closed'
+2025-08-08 13:00:47,442 - __main__ - ERROR - Error handling blink detection: BlinkEvent.__init__() got an unexpected keyword argument 'open_closed'
+2025-08-08 13:00:48,241 - __main__ - ERROR - Error handling blink detection: BlinkEvent.__init__() got an unexpected keyword argument 'open_closed'
+2025-08-08 13:00:48,473 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:00:48.473518", "cpu_percent": 10.0, "memory_percent": 72.2, "memory_used_mb": 11387.3046875, "memory_available_mb": 4385.95703125, "memory_mb": 11387.3046875, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:00:49,216 - __main__ - ERROR - Error handling blink detection: BlinkEvent.__init__() got an unexpected keyword argument 'open_closed'
+2025-08-08 13:00:50,209 - __main__ - ERROR - Error handling blink detection: BlinkEvent.__init__() got an unexpected keyword argument 'open_closed'
+2025-08-08 13:00:51,153 - __main__ - ERROR - Error handling blink detection: BlinkEvent.__init__() got an unexpected keyword argument 'open_closed'
+2025-08-08 13:00:52,321 - __main__ - ERROR - Error handling blink detection: BlinkEvent.__init__() got an unexpected keyword argument 'open_closed'
+2025-08-08 13:00:52,913 - __main__ - ERROR - Error handling blink detection: BlinkEvent.__init__() got an unexpected keyword argument 'open_closed'
+2025-08-08 13:00:53,521 - __main__ - ERROR - Error handling blink detection: BlinkEvent.__init__() got an unexpected keyword argument 'open_closed'
+2025-08-08 13:00:54,049 - __main__ - ERROR - Error handling blink detection: BlinkEvent.__init__() got an unexpected keyword argument 'open_closed'
+2025-08-08 13:00:54,353 - __main__ - ERROR - Error handling blink detection: BlinkEvent.__init__() got an unexpected keyword argument 'open_closed'
+2025-08-08 13:00:54,785 - __main__ - ERROR - Error handling blink detection: BlinkEvent.__init__() got an unexpected keyword argument 'open_closed'
+2025-08-08 13:00:56,081 - __main__ - ERROR - Error handling blink detection: BlinkEvent.__init__() got an unexpected keyword argument 'open_closed'
+2025-08-08 13:00:57,009 - __main__ - ERROR - Error handling blink detection: BlinkEvent.__init__() got an unexpected keyword argument 'open_closed'
+2025-08-08 13:00:59,409 - __main__ - ERROR - Error handling blink detection: BlinkEvent.__init__() got an unexpected keyword argument 'open_closed'
+2025-08-08 13:01:01,222 - desktop_app.eye_tracker - INFO - Stopping eye tracking...
+2025-08-08 13:01:01,251 - desktop_app.eye_tracker - INFO - Tracking loop ended
+2025-08-08 13:01:01,634 - desktop_app.eye_tracker - INFO - Camera released
+2025-08-08 13:01:01,639 - desktop_app.eye_tracker - INFO - Resources cleaned up
+2025-08-08 13:01:01,639 - desktop_app.eye_tracker - INFO - Resources cleaned up
+2025-08-08 13:01:01,639 - desktop_app.eye_tracker - INFO - Eye tracking stopped. Final stats - Frames: 645, Blinks: 21, Detection Rate: 100.0%
+2025-08-08 13:01:08,481 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:01:08.481081", "cpu_percent": 5.6, "memory_percent": 70.4, "memory_used_mb": 11106.29296875, "memory_available_mb": 4666.96875, "memory_mb": 11106.29296875, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:01:28,489 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:01:28.489546", "cpu_percent": 4.8, "memory_percent": 70.4, "memory_used_mb": 11100.375, "memory_available_mb": 4672.88671875, "memory_mb": 11100.375, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:01:48,508 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:01:48.508295", "cpu_percent": 9.2, "memory_percent": 70.3, "memory_used_mb": 11092.4296875, "memory_available_mb": 4680.83203125, "memory_mb": 11092.4296875, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:02:08,516 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:02:08.516779", "cpu_percent": 4.1, "memory_percent": 69.7, "memory_used_mb": 10996.7265625, "memory_available_mb": 4776.53515625, "memory_mb": 10996.7265625, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:02:28,524 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:02:28.524947", "cpu_percent": 2.5, "memory_percent": 68.7, "memory_used_mb": 10840.82421875, "memory_available_mb": 4932.4375, "memory_mb": 10840.82421875, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:02:48,534 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:02:48.534369", "cpu_percent": 9.0, "memory_percent": 69.7, "memory_used_mb": 10989.42578125, "memory_available_mb": 4783.8359375, "memory_mb": 10989.42578125, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:03:08,542 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:03:08.542256", "cpu_percent": 4.5, "memory_percent": 68.6, "memory_used_mb": 10816.65625, "memory_available_mb": 4956.60546875, "memory_mb": 10816.65625, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:03:28,550 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:03:28.550971", "cpu_percent": 3.4, "memory_percent": 71.1, "memory_used_mb": 11215.6875, "memory_available_mb": 4557.57421875, "memory_mb": 11215.6875, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:03:48,559 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:03:48.559253", "cpu_percent": 10.8, "memory_percent": 72.1, "memory_used_mb": 11369.1484375, "memory_available_mb": 4404.11328125, "memory_mb": 11369.1484375, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:04:08,567 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:04:08.567291", "cpu_percent": 5.5, "memory_percent": 72.4, "memory_used_mb": 11422.0390625, "memory_available_mb": 4351.22265625, "memory_mb": 11422.0390625, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:04:28,576 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:04:28.575544", "cpu_percent": 5.4, "memory_percent": 71.5, "memory_used_mb": 11283.4296875, "memory_available_mb": 4489.83203125, "memory_mb": 11283.4296875, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:04:48,583 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:04:48.583543", "cpu_percent": 2.9, "memory_percent": 71.6, "memory_used_mb": 11295.35546875, "memory_available_mb": 4477.90625, "memory_mb": 11295.35546875, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:05:08,590 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:05:08.590789", "cpu_percent": 16.7, "memory_percent": 75.3, "memory_used_mb": 11880.02734375, "memory_available_mb": 3893.234375, "memory_mb": 11880.02734375, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:05:28,599 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:05:28.599883", "cpu_percent": 8.0, "memory_percent": 72.6, "memory_used_mb": 11455.0078125, "memory_available_mb": 4318.25390625, "memory_mb": 11455.0078125, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:05:48,608 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:05:48.608489", "cpu_percent": 9.2, "memory_percent": 73.9, "memory_used_mb": 11656.859375, "memory_available_mb": 4116.40234375, "memory_mb": 11656.859375, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:06:08,616 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:06:08.616068", "cpu_percent": 4.5, "memory_percent": 72.3, "memory_used_mb": 11406.91796875, "memory_available_mb": 4366.34375, "memory_mb": 11406.91796875, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:06:28,624 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:06:28.623518", "cpu_percent": 4.2, "memory_percent": 72.3, "memory_used_mb": 11403.88671875, "memory_available_mb": 4369.375, "memory_mb": 11403.88671875, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:06:48,631 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:06:48.631903", "cpu_percent": 5.9, "memory_percent": 73.8, "memory_used_mb": 11642.44921875, "memory_available_mb": 4130.8125, "memory_mb": 11642.44921875, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:07:08,640 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:07:08.640134", "cpu_percent": 6.0, "memory_percent": 72.2, "memory_used_mb": 11387.2109375, "memory_available_mb": 4386.05078125, "memory_mb": 11387.2109375, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:07:28,649 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:07:28.649932", "cpu_percent": 2.3, "memory_percent": 72.2, "memory_used_mb": 11381.8671875, "memory_available_mb": 4391.39453125, "memory_mb": 11381.8671875, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:07:31,233 - desktop_app.auth - INFO - Using OAuth credentials from: D:\Projects2.0\Wellness.ai\configs\client_secret_826138217044-p1qiu2ohq2mh2cn12k9phavhv7vim98q.apps.googleusercontent.com.json
+2025-08-08 13:07:31,234 - desktop_app.metrics - INFO - Performance monitor initialized with 2.0s interval
+2025-08-08 13:07:31,235 - desktop_app.sync - INFO - Local database initialized
+2025-08-08 13:07:31,270 - desktop_app.sync - INFO - Database migration completed
+2025-08-08 13:07:31,270 - desktop_app.sync - INFO - AWS credentials not configured, using local storage only
+2025-08-08 13:07:31,277 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754638651
+2025-08-08 13:07:31,277 - desktop_app.eye_tracker_ui - INFO - Production eye tracker initialized successfully
+2025-08-08 13:07:31,277 - desktop_app.eye_tracker_ui - INFO - Production EyeTrackerUI initialized
+2025-08-08 13:07:31,277 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754638651
+2025-08-08 13:07:31,277 - __main__ - INFO - Core components initialized successfully
+2025-08-08 13:07:31,310 - __main__ - INFO - Wellness at Work application initialized successfully
+2025-08-08 13:07:31,375 - desktop_app.metrics - INFO - Performance monitoring started
+2025-08-08 13:07:31,376 - desktop_app.sync - INFO - Sync manager started
+2025-08-08 13:07:31,376 - __main__ - INFO - Application started successfully
+2025-08-08 13:07:48,659 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:07:48.658537", "cpu_percent": 3.4, "memory_percent": 71.8, "memory_used_mb": 11324.921875, "memory_available_mb": 4448.33984375, "memory_mb": 11324.921875, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:08:08,666 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:08:08.666723", "cpu_percent": 12.1, "memory_percent": 71.3, "memory_used_mb": 11250.83203125, "memory_available_mb": 4522.4296875, "memory_mb": 11250.83203125, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:08:28,479 - desktop_app.auth - INFO - Using OAuth credentials from: D:\Projects2.0\Wellness.ai\configs\client_secret_826138217044-p1qiu2ohq2mh2cn12k9phavhv7vim98q.apps.googleusercontent.com.json
+2025-08-08 13:08:28,480 - desktop_app.metrics - INFO - Performance monitor initialized with 2.0s interval
+2025-08-08 13:08:28,481 - desktop_app.sync - INFO - Local database initialized
+2025-08-08 13:08:28,482 - desktop_app.sync - INFO - Database migration completed
+2025-08-08 13:08:28,482 - desktop_app.sync - INFO - AWS credentials not configured, using local storage only
+2025-08-08 13:08:28,487 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754638708
+2025-08-08 13:08:28,488 - desktop_app.eye_tracker_ui - INFO - Production eye tracker initialized successfully
+2025-08-08 13:08:28,488 - desktop_app.eye_tracker_ui - INFO - Production EyeTrackerUI initialized
+2025-08-08 13:08:28,488 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754638708
+2025-08-08 13:08:28,488 - __main__ - INFO - Core components initialized successfully
+2025-08-08 13:08:28,521 - __main__ - INFO - Wellness at Work application initialized successfully
+2025-08-08 13:08:28,588 - desktop_app.metrics - INFO - Performance monitoring started
+2025-08-08 13:08:28,588 - desktop_app.sync - INFO - Sync manager started
+2025-08-08 13:08:28,589 - __main__ - INFO - Application started successfully
+2025-08-08 13:08:28,674 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:08:28.674260", "cpu_percent": 15.0, "memory_percent": 73.0, "memory_used_mb": 11516.421875, "memory_available_mb": 4256.83984375, "memory_mb": 11516.421875, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:08:46,595 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:08:46.595492", "cpu_percent": 3.2, "memory_percent": 73.6, "memory_used_mb": 11602.87109375, "memory_available_mb": 4170.390625, "memory_mb": 11602.87109375, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:08:48,682 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:08:48.682507", "cpu_percent": 7.4, "memory_percent": 73.9, "memory_used_mb": 11657.6640625, "memory_available_mb": 4115.59765625, "memory_mb": 11657.6640625, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:09:08,690 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:09:08.690505", "cpu_percent": 5.9, "memory_percent": 70.7, "memory_used_mb": 11159.2734375, "memory_available_mb": 4613.98828125, "memory_mb": 11159.2734375, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:09:28,698 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:09:28.697943", "cpu_percent": 7.0, "memory_percent": 71.1, "memory_used_mb": 11217.6875, "memory_available_mb": 4555.57421875, "memory_mb": 11217.6875, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:09:48,706 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:09:48.706269", "cpu_percent": 3.5, "memory_percent": 72.2, "memory_used_mb": 11388.89453125, "memory_available_mb": 4384.3671875, "memory_mb": 11388.89453125, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:10:08,716 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:10:08.716162", "cpu_percent": 5.4, "memory_percent": 72.5, "memory_used_mb": 11432.78515625, "memory_available_mb": 4340.4765625, "memory_mb": 11432.78515625, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:10:26,749 - desktop_app.auth - INFO - Using OAuth credentials from: D:\Projects2.0\Wellness.ai\configs\client_secret_826138217044-p1qiu2ohq2mh2cn12k9phavhv7vim98q.apps.googleusercontent.com.json
+2025-08-08 13:10:26,750 - desktop_app.metrics - INFO - Performance monitor initialized with 2.0s interval
+2025-08-08 13:10:26,750 - desktop_app.sync - INFO - Local database initialized
+2025-08-08 13:10:26,751 - desktop_app.sync - INFO - Database migration completed
+2025-08-08 13:10:26,751 - desktop_app.sync - INFO - AWS credentials not configured, using local storage only
+2025-08-08 13:10:26,756 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754638826
+2025-08-08 13:10:26,756 - desktop_app.eye_tracker_ui - INFO - Production eye tracker initialized successfully
+2025-08-08 13:10:26,756 - desktop_app.eye_tracker_ui - INFO - Production EyeTrackerUI initialized
+2025-08-08 13:10:26,756 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754638826
+2025-08-08 13:10:26,758 - __main__ - INFO - Core components initialized successfully
+2025-08-08 13:10:26,791 - __main__ - INFO - Wellness at Work application initialized successfully
+2025-08-08 13:10:26,858 - desktop_app.metrics - INFO - Performance monitoring started
+2025-08-08 13:10:26,858 - desktop_app.sync - INFO - Sync manager started
+2025-08-08 13:10:26,858 - __main__ - INFO - Application started successfully
+2025-08-08 13:10:28,726 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:10:28.726475", "cpu_percent": 10.5, "memory_percent": 74.6, "memory_used_mb": 11761.80078125, "memory_available_mb": 4011.4609375, "memory_mb": 11761.80078125, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:10:44,865 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:10:44.865341", "cpu_percent": 4.4, "memory_percent": 74.4, "memory_used_mb": 11741.28125, "memory_available_mb": 4031.98046875, "memory_mb": 11741.28125, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:10:45,609 - desktop_app.ui - ERROR - Login error: HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/auth/login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000197443828A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-08-08 13:10:48,739 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:10:48.739248", "cpu_percent": 5.7, "memory_percent": 74.5, "memory_used_mb": 11746.98046875, "memory_available_mb": 4026.28125, "memory_mb": 11746.98046875, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:11:08,747 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:11:08.747200", "cpu_percent": 5.3, "memory_percent": 72.5, "memory_used_mb": 11428.34375, "memory_available_mb": 4344.91796875, "memory_mb": 11428.34375, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:11:28,754 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:11:28.754708", "cpu_percent": 7.1, "memory_percent": 72.9, "memory_used_mb": 11500.8515625, "memory_available_mb": 4272.41015625, "memory_mb": 11500.8515625, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:11:34,324 - desktop_app.auth - INFO - Using OAuth credentials from: D:\Projects2.0\Wellness.ai\configs\client_secret_826138217044-p1qiu2ohq2mh2cn12k9phavhv7vim98q.apps.googleusercontent.com.json
+2025-08-08 13:11:34,325 - desktop_app.metrics - INFO - Performance monitor initialized with 2.0s interval
+2025-08-08 13:11:34,326 - desktop_app.sync - INFO - Local database initialized
+2025-08-08 13:11:34,326 - desktop_app.sync - INFO - Database migration completed
+2025-08-08 13:11:34,326 - desktop_app.sync - INFO - AWS credentials not configured, using local storage only
+2025-08-08 13:11:34,332 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754638894
+2025-08-08 13:11:34,332 - desktop_app.eye_tracker_ui - INFO - Production eye tracker initialized successfully
+2025-08-08 13:11:34,332 - desktop_app.eye_tracker_ui - INFO - Production EyeTrackerUI initialized
+2025-08-08 13:11:34,332 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754638894
+2025-08-08 13:11:34,332 - __main__ - INFO - Core components initialized successfully
+2025-08-08 13:11:34,366 - __main__ - INFO - Wellness at Work application initialized successfully
+2025-08-08 13:11:34,434 - desktop_app.metrics - INFO - Performance monitoring started
+2025-08-08 13:11:34,435 - desktop_app.sync - INFO - Sync manager started
+2025-08-08 13:11:34,435 - __main__ - INFO - Application started successfully
+2025-08-08 13:11:36,037 - desktop_app.auth - INFO - Starting authentication process...
+2025-08-08 13:11:36,154 - desktop_app.auth - INFO - Loaded existing credentials: True
+2025-08-08 13:11:36,522 - desktop_app.auth - INFO - Credentials saved successfully
+2025-08-08 13:11:36,522 - desktop_app.auth - INFO - Credentials saved to secure storage
+2025-08-08 13:11:36,522 - desktop_app.auth - INFO - Using existing credentials
+2025-08-08 13:11:36,706 - desktop_app.auth - INFO - Successfully retrieved user info for: samay.m2504@gmail.com
+2025-08-08 13:11:38,275 - desktop_app.eye_tracker - INFO - Starting eye tracking...
+2025-08-08 13:11:38,275 - desktop_app.eye_tracker - INFO - Initializing camera...
+2025-08-08 13:11:38,275 - desktop_app.eye_tracker - INFO - Trying camera index 0 with backend 700
+2025-08-08 13:11:41,212 - desktop_app.eye_tracker - INFO - Camera configured successfully
+2025-08-08 13:11:41,609 - desktop_app.eye_tracker - INFO - Camera verified: 640x480
+2025-08-08 13:11:41,609 - desktop_app.eye_tracker - INFO - Camera initialized successfully: index 0, backend 700
+2025-08-08 13:11:41,618 - desktop_app.eye_tracker - INFO - MediaPipe Face Mesh initialized
+2025-08-08 13:11:41,618 - desktop_app.eye_tracker - INFO - Tracking loop started
+2025-08-08 13:11:41,618 - desktop_app.eye_tracker - INFO - Eye tracking started successfully
+2025-08-08 13:11:42,600 - desktop_app.sync - INFO - Event buffered: f8d848a0-f0d6-4883-8ab5-455db239e731 (count: 1)
+2025-08-08 13:11:43,386 - desktop_app.sync - INFO - Event buffered: e28f0c98-1f50-4a61-a76e-a98fef193a4b (count: 2)
+2025-08-08 13:11:44,098 - desktop_app.sync - INFO - Event buffered: dd8c73fe-853d-449e-83cc-d33151eebd46 (count: 3)
+2025-08-08 13:11:44,841 - desktop_app.sync - INFO - Event buffered: 026b67d0-fbc6-4c5e-9162-ed38ca9683d2 (count: 4)
+2025-08-08 13:11:45,513 - desktop_app.sync - INFO - Event buffered: 1f8b53d3-f08e-406f-a12e-5708a6f55d8b (count: 5)
+2025-08-08 13:11:46,284 - desktop_app.sync - INFO - Event buffered: a47b1d70-df7b-42d4-b834-c28b4f92a490 (count: 6)
+2025-08-08 13:11:47,017 - desktop_app.sync - INFO - Event buffered: fcdbc716-2160-4897-b9d9-ce5140d589af (count: 7)
+2025-08-08 13:11:47,689 - desktop_app.sync - INFO - Event buffered: 506b3a2b-36e9-45c2-9b83-b561aea904c4 (count: 8)
+2025-08-08 13:11:48,347 - desktop_app.sync - INFO - Event buffered: 591c4ddb-2608-419e-b165-9b281159cdb6 (count: 9)
+2025-08-08 13:11:48,762 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:11:48.762386", "cpu_percent": 7.5, "memory_percent": 73.2, "memory_used_mb": 11541.23828125, "memory_available_mb": 4232.0234375, "memory_mb": 11541.23828125, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:11:49,042 - desktop_app.sync - INFO - Event buffered: 9749a264-497c-495c-923c-644386a75937 (count: 10)
+2025-08-08 13:11:49,755 - desktop_app.sync - INFO - Event buffered: f5e86867-5c00-4bfb-b499-81ac48f8105c (count: 11)
+2025-08-08 13:11:50,508 - desktop_app.sync - INFO - Event buffered: 055331cc-7e69-4bb4-952c-d1a9789ca2a8 (count: 12)
+2025-08-08 13:11:51,518 - desktop_app.eye_tracker - INFO - Stopping eye tracking...
+2025-08-08 13:11:51,531 - desktop_app.eye_tracker - INFO - Tracking loop ended
+2025-08-08 13:11:51,914 - desktop_app.eye_tracker - INFO - Camera released
+2025-08-08 13:11:51,918 - desktop_app.eye_tracker - INFO - Resources cleaned up
+2025-08-08 13:11:51,918 - desktop_app.eye_tracker - INFO - Resources cleaned up
+2025-08-08 13:11:51,918 - desktop_app.eye_tracker - INFO - Eye tracking stopped. Final stats - Frames: 298, Blinks: 12, Detection Rate: 100.0%
+2025-08-08 13:11:52,441 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:11:52.441404", "cpu_percent": 8.2, "memory_percent": 72.8, "memory_used_mb": 11489.91015625, "memory_available_mb": 4283.3515625, "memory_mb": 11489.91015625, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:12:08,771 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:12:08.771253", "cpu_percent": 14.1, "memory_percent": 73.6, "memory_used_mb": 11604.45703125, "memory_available_mb": 4168.8046875, "memory_mb": 11604.45703125, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:12:12,448 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:12:12.448683", "cpu_percent": 5.7, "memory_percent": 73.5, "memory_used_mb": 11592.25, "memory_available_mb": 4181.01171875, "memory_mb": 11592.25, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:12:28,780 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:12:28.780148", "cpu_percent": 6.6, "memory_percent": 73.2, "memory_used_mb": 11541.19140625, "memory_available_mb": 4232.0703125, "memory_mb": 11541.19140625, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:12:48,787 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:12:48.787804", "cpu_percent": 5.4, "memory_percent": 74.0, "memory_used_mb": 11670.64453125, "memory_available_mb": 4102.6171875, "memory_mb": 11670.64453125, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-08 13:13:08,796 - performance_metrics - INFO - {"timestamp": "2025-08-08T13:13:08.796084", "cpu_percent": 12.0, "memory_percent": 72.7, "memory_used_mb": 11469.51171875, "memory_available_mb": 4303.75, "memory_mb": 11469.51171875, "disk_percent": 28.8, "battery_percent": 60, "battery_time_left": null, "battery_plugged": true, "power_consumption": null}
+2025-08-11 18:58:08,950 - desktop_app.email_auth - WARNING - Secure storage not available, using keyring fallback
+2025-08-11 18:58:11,135 - desktop_app.email_auth - WARNING - Secure storage not available, using keyring fallback
+2025-08-11 18:58:11,345 - desktop_app.email_auth - INFO - Auto-login successful (local): testuser@gmail.com
+2025-08-11 18:58:12,859 - __main__ - INFO - User authenticated: testuser@gmail.com
+2025-08-11 18:58:12,862 - desktop_app.auth - INFO - Using OAuth credentials from: D:\Projects2.0\Wellness.ai\configs\client_secret_826138217044-p1qiu2ohq2mh2cn12k9phavhv7vim98q.apps.googleusercontent.com.json
+2025-08-11 18:58:12,862 - desktop_app.metrics - INFO - Performance monitor initialized with 2.0s interval
+2025-08-11 18:58:12,874 - desktop_app.sync - INFO - Local database initialized
+2025-08-11 18:58:12,875 - desktop_app.sync - INFO - Database migration completed
+2025-08-11 18:58:13,189 - desktop_app.sync - INFO - S3 client initialized
+2025-08-11 18:58:13,191 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754918893
+2025-08-11 18:58:13,192 - desktop_app.eye_tracker_ui - INFO - Production eye tracker initialized successfully
+2025-08-11 18:58:13,192 - desktop_app.eye_tracker_ui - INFO - Production EyeTrackerUI initialized
+2025-08-11 18:58:13,192 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754918893
+2025-08-11 18:58:13,192 - __main__ - INFO - Core components initialized successfully
+2025-08-11 18:58:13,193 - __main__ - ERROR - Failed to initialize application: MainWindow.__init__() got an unexpected keyword argument 'authenticated_user'
+2025-08-11 18:58:18,642 - __main__ - ERROR - Application failed to start: 'WellnessAIApp' object has no attribute 'main_window'
+2025-08-11 18:58:27,333 - __main__ - INFO - Cleaning up application resources...
+2025-08-11 18:58:27,334 - __main__ - INFO - Application cleanup completed
+2025-08-11 18:59:16,116 - desktop_app.email_auth - WARNING - Secure storage not available, using keyring fallback
+2025-08-11 18:59:18,143 - desktop_app.email_auth - WARNING - Secure storage not available, using keyring fallback
+2025-08-11 18:59:18,318 - desktop_app.email_auth - INFO - Auto-login successful (local): testuser@gmail.com
+2025-08-11 18:59:19,821 - __main__ - INFO - User authenticated: testuser@gmail.com
+2025-08-11 18:59:19,836 - desktop_app.auth - INFO - Using OAuth credentials from: D:\Projects2.0\Wellness.ai\configs\client_secret_826138217044-p1qiu2ohq2mh2cn12k9phavhv7vim98q.apps.googleusercontent.com.json
+2025-08-11 18:59:19,837 - desktop_app.metrics - INFO - Performance monitor initialized with 2.0s interval
+2025-08-11 18:59:19,847 - desktop_app.sync - INFO - Local database initialized
+2025-08-11 18:59:19,848 - desktop_app.sync - INFO - Database migration completed
+2025-08-11 18:59:20,202 - desktop_app.sync - INFO - S3 client initialized
+2025-08-11 18:59:20,204 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754918960
+2025-08-11 18:59:20,205 - desktop_app.eye_tracker_ui - INFO - Production eye tracker initialized successfully
+2025-08-11 18:59:20,205 - desktop_app.eye_tracker_ui - INFO - Production EyeTrackerUI initialized
+2025-08-11 18:59:20,205 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754918960
+2025-08-11 18:59:20,205 - __main__ - INFO - Core components initialized successfully
+2025-08-11 18:59:20,268 - __main__ - INFO - Wellness at Work application initialized successfully
+2025-08-11 18:59:20,340 - desktop_app.metrics - INFO - Performance monitoring started
+2025-08-11 18:59:20,353 - performance_spikes - WARNING - MEMORY spike: 96.4% (threshold: 85.0%)
+2025-08-11 18:59:20,354 - desktop_app.sync - INFO - Sync manager started
+2025-08-11 18:59:20,354 - __main__ - INFO - Application started successfully
+2025-08-11 18:59:34,293 - desktop_app.eye_tracker - INFO - Starting eye tracking...
+2025-08-11 18:59:34,293 - desktop_app.eye_tracker - INFO - Initializing camera...
+2025-08-11 18:59:34,293 - desktop_app.eye_tracker - INFO - Trying camera index 0 with backend 700
+2025-08-11 18:59:37,972 - desktop_app.eye_tracker - INFO - Camera configured successfully
+2025-08-11 18:59:38,516 - performance_metrics - INFO - {"timestamp": "2025-08-11T18:59:38.510382", "cpu_percent": 12.5, "memory_percent": 95.6, "memory_used_mb": 15085.78515625, "memory_available_mb": 687.4765625, "memory_mb": 15085.78515625, "disk_percent": 33.9, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-11 18:59:38,966 - desktop_app.eye_tracker - INFO - Camera verified: 640x480
+2025-08-11 18:59:38,966 - desktop_app.eye_tracker - INFO - Camera initialized successfully: index 0, backend 700
+2025-08-11 18:59:38,993 - desktop_app.eye_tracker - INFO - MediaPipe Face Mesh initialized
+2025-08-11 18:59:38,993 - desktop_app.eye_tracker - INFO - Tracking loop started
+2025-08-11 18:59:38,993 - desktop_app.eye_tracker - INFO - Eye tracking started successfully
+2025-08-11 18:59:58,696 - performance_metrics - INFO - {"timestamp": "2025-08-11T18:59:58.690889", "cpu_percent": 0.0, "memory_percent": 95.8, "memory_used_mb": 15114.5625, "memory_available_mb": 658.69921875, "memory_mb": 15114.5625, "disk_percent": 33.9, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-11 19:00:06,792 - desktop_app.eye_tracker - INFO - Stopping eye tracking...
+2025-08-11 19:00:06,805 - desktop_app.eye_tracker - INFO - Tracking loop ended
+2025-08-11 19:00:07,228 - desktop_app.eye_tracker - INFO - Camera released
+2025-08-11 19:00:07,232 - desktop_app.eye_tracker - INFO - Resources cleaned up
+2025-08-11 19:00:07,234 - desktop_app.eye_tracker - ERROR - Error during cleanup: Closing SolutionBase._graph which is already None
+2025-08-11 19:00:07,234 - desktop_app.eye_tracker - INFO - Eye tracking stopped. Final stats - Frames: 836, Blinks: 25, Detection Rate: 82.7%
+2025-08-11 19:00:18,887 - performance_metrics - INFO - {"timestamp": "2025-08-11T19:00:18.881125", "cpu_percent": 50.0, "memory_percent": 96.0, "memory_used_mb": 15149.0, "memory_available_mb": 624.26171875, "memory_mb": 15149.0, "disk_percent": 33.9, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-11 19:00:39,075 - performance_metrics - INFO - {"timestamp": "2025-08-11T19:00:39.066835", "cpu_percent": 15.0, "memory_percent": 96.8, "memory_used_mb": 15270.71484375, "memory_available_mb": 502.546875, "memory_mb": 15270.71484375, "disk_percent": 36.2, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:26:50,853 - desktop_app.email_auth - WARNING - Secure storage not available, using keyring fallback
+2025-08-12 01:26:51,703 - matplotlib.font_manager - INFO - generated new fontManager
+2025-08-12 01:26:52,485 - desktop_app.email_auth - WARNING - Secure storage not available, using keyring fallback
+2025-08-12 01:26:52,572 - desktop_app.email_auth - INFO - Auto-login successful (local): testuser@gmail.com
+2025-08-12 01:26:54,091 - __main__ - INFO - User authenticated: testuser@gmail.com
+2025-08-12 01:26:54,092 - desktop_app.auth - INFO - Using OAuth credentials from: configs\client_secret_826138217044-p1qiu2ohq2mh2cn12k9phavhv7vim98q.apps.googleusercontent.com.json
+2025-08-12 01:26:54,093 - desktop_app.metrics - INFO - Performance monitor initialized with 2.0s interval
+2025-08-12 01:26:54,094 - desktop_app.sync - INFO - Local database initialized
+2025-08-12 01:26:54,094 - desktop_app.sync - INFO - Database migration completed
+2025-08-12 01:26:54,161 - botocore.credentials - INFO - Found credentials in environment variables.
+2025-08-12 01:26:54,323 - desktop_app.sync - INFO - S3 client initialized
+2025-08-12 01:26:54,325 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754942214
+2025-08-12 01:26:54,325 - desktop_app.eye_tracker_ui - INFO - Production eye tracker initialized successfully
+2025-08-12 01:26:54,325 - desktop_app.eye_tracker_ui - INFO - Production EyeTrackerUI initialized
+2025-08-12 01:26:54,327 - desktop_app.data_storage - INFO - Blink events table migrated successfully
+2025-08-12 01:26:54,327 - desktop_app.data_storage - INFO - Sessions table migrated successfully
+2025-08-12 01:26:54,327 - desktop_app.data_storage - INFO - Database initialized successfully
+2025-08-12 01:26:54,328 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754942214
+2025-08-12 01:26:54,328 - __main__ - INFO - Core components initialized successfully
+2025-08-12 01:26:54,356 - __main__ - INFO - Wellness at Work application initialized successfully
+2025-08-12 01:26:54,422 - desktop_app.metrics - INFO - Performance monitoring started
+2025-08-12 01:26:54,430 - desktop_app.sync - INFO - Sync manager started
+2025-08-12 01:26:54,430 - __main__ - INFO - Application started successfully
+2025-08-12 01:27:05,129 - google_auth_oauthlib.flow - INFO - "GET /?state=LH7WjoZc7K5O7gbTLbabKFpUDr6Mi3&code=4%2F0AVMBsJgI_pYUwpmxXTyklBXFWTbMmoORE-3NZglELJSUcAzloaNP82gyrCL88azscwc3pg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=1&prompt=consent HTTP/1.1" 200 65
+2025-08-12 01:27:05,507 - desktop_app.auth - INFO - Credentials saved successfully
+2025-08-12 01:27:05,507 - desktop_app.auth - INFO - Credentials saved to secure storage
+2025-08-12 01:27:12,487 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:27:12.486671", "cpu_percent": 36.4, "memory_percent": 76.9, "memory_used_mb": 12137.0078125, "memory_available_mb": 3636.25390625, "memory_mb": 12137.0078125, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:27:32,556 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:27:32.555937", "cpu_percent": 0.0, "memory_percent": 76.4, "memory_used_mb": 12054.578125, "memory_available_mb": 3718.68359375, "memory_mb": 12054.578125, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:27:40,091 - desktop_app.auth_service - WARNING - Redis unavailable, using memory fallback: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-08-12 01:27:48,729 - desktop_app.eye_tracker - INFO - Starting eye tracking...
+2025-08-12 01:27:48,729 - desktop_app.eye_tracker - INFO - Initializing camera...
+2025-08-12 01:27:48,729 - desktop_app.eye_tracker - INFO - Trying camera index 0 with backend 700
+2025-08-12 01:27:51,316 - desktop_app.eye_tracker - INFO - Camera configured successfully
+2025-08-12 01:27:51,709 - desktop_app.eye_tracker - INFO - Camera verified: 640x480
+2025-08-12 01:27:51,709 - desktop_app.eye_tracker - INFO - Camera initialized successfully: index 0, backend 700
+2025-08-12 01:27:51,717 - desktop_app.eye_tracker - INFO - MediaPipe Face Mesh initialized
+2025-08-12 01:27:51,718 - desktop_app.eye_tracker - INFO - Tracking loop started
+2025-08-12 01:27:51,718 - desktop_app.eye_tracker - INFO - Eye tracking started successfully
+2025-08-12 01:27:52,615 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:27:52.615474", "cpu_percent": 0.0, "memory_percent": 74.5, "memory_used_mb": 11755.421875, "memory_available_mb": 4017.83984375, "memory_mb": 11755.421875, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:27:55,215 - desktop_app.data_storage - INFO - Started new session: session_1754942275
+2025-08-12 01:28:00,180 - desktop_app.eye_tracker - INFO - Stopping eye tracking...
+2025-08-12 01:28:00,193 - desktop_app.eye_tracker - INFO - Tracking loop ended
+2025-08-12 01:28:00,582 - desktop_app.eye_tracker - INFO - Camera released
+2025-08-12 01:28:00,586 - desktop_app.eye_tracker - INFO - Resources cleaned up
+2025-08-12 01:28:00,587 - desktop_app.eye_tracker - ERROR - Error during cleanup: Closing SolutionBase._graph which is already None
+2025-08-12 01:28:00,587 - desktop_app.eye_tracker - INFO - Eye tracking stopped. Final stats - Frames: 256, Blinks: 15, Detection Rate: 100.0%
+2025-08-12 01:28:12,674 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:28:12.674833", "cpu_percent": 0.0, "memory_percent": 74.2, "memory_used_mb": 11699.796875, "memory_available_mb": 4073.46484375, "memory_mb": 11699.796875, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:28:32,727 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:28:32.727330", "cpu_percent": 0.0, "memory_percent": 72.6, "memory_used_mb": 11449.60546875, "memory_available_mb": 4323.65625, "memory_mb": 11449.60546875, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:28:52,783 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:28:52.783357", "cpu_percent": 0.0, "memory_percent": 72.7, "memory_used_mb": 11462.47265625, "memory_available_mb": 4310.7890625, "memory_mb": 11462.47265625, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:28:55,208 - desktop_app.auth - INFO - User signed out successfully
+2025-08-12 01:29:02,074 - google_auth_oauthlib.flow - INFO - "GET /?state=YMDZiN3HIOhf6pUSgzjutpeVakQ92F&code=4%2F0AVMBsJgJ8RGOGUn3PU-yO3IpscTS9G4Hnt3hbcZwEF-2n6oUVNe4SEmRS4hTRY-PRQBa4A&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent HTTP/1.1" 200 65
+2025-08-12 01:29:02,399 - desktop_app.auth - INFO - Credentials saved successfully
+2025-08-12 01:29:02,400 - desktop_app.auth - INFO - Credentials saved to secure storage
+2025-08-12 01:29:12,840 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:29:12.840833", "cpu_percent": 16.7, "memory_percent": 76.0, "memory_used_mb": 11985.91015625, "memory_available_mb": 3787.3515625, "memory_mb": 11985.91015625, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:29:32,894 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:29:32.894239", "cpu_percent": 0.0, "memory_percent": 74.8, "memory_used_mb": 11791.8828125, "memory_available_mb": 3981.37890625, "memory_mb": 11791.8828125, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:29:52,948 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:29:52.947387", "cpu_percent": 20.0, "memory_percent": 73.2, "memory_used_mb": 11538.3125, "memory_available_mb": 4234.94921875, "memory_mb": 11538.3125, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:30:13,006 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:30:13.006721", "cpu_percent": 0.0, "memory_percent": 73.9, "memory_used_mb": 11653.76953125, "memory_available_mb": 4119.4921875, "memory_mb": 11653.76953125, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:30:33,062 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:30:33.061988", "cpu_percent": 0.0, "memory_percent": 74.5, "memory_used_mb": 11755.890625, "memory_available_mb": 4017.37109375, "memory_mb": 11755.890625, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:30:53,115 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:30:53.114341", "cpu_percent": 0.0, "memory_percent": 76.1, "memory_used_mb": 11996.1484375, "memory_available_mb": 3777.11328125, "memory_mb": 11996.1484375, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:31:13,171 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:31:13.171745", "cpu_percent": 0.0, "memory_percent": 75.8, "memory_used_mb": 11949.88671875, "memory_available_mb": 3823.375, "memory_mb": 11949.88671875, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:31:33,224 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:31:33.224455", "cpu_percent": 0.0, "memory_percent": 74.2, "memory_used_mb": 11706.0546875, "memory_available_mb": 4067.20703125, "memory_mb": 11706.0546875, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:31:53,282 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:31:53.281873", "cpu_percent": 0.0, "memory_percent": 78.2, "memory_used_mb": 12333.6796875, "memory_available_mb": 3439.58203125, "memory_mb": 12333.6796875, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:32:13,343 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:32:13.343922", "cpu_percent": 0.0, "memory_percent": 78.3, "memory_used_mb": 12356.4375, "memory_available_mb": 3416.82421875, "memory_mb": 12356.4375, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:32:33,408 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:32:33.408122", "cpu_percent": 0.0, "memory_percent": 81.9, "memory_used_mb": 12918.31640625, "memory_available_mb": 2854.9453125, "memory_mb": 12918.31640625, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:32:53,470 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:32:53.469732", "cpu_percent": 0.0, "memory_percent": 81.9, "memory_used_mb": 12918.04296875, "memory_available_mb": 2855.21875, "memory_mb": 12918.04296875, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:33:13,525 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:33:13.525944", "cpu_percent": 0.0, "memory_percent": 80.6, "memory_used_mb": 12712.38671875, "memory_available_mb": 3060.875, "memory_mb": 12712.38671875, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:33:33,580 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:33:33.580953", "cpu_percent": 0.0, "memory_percent": 81.0, "memory_used_mb": 12774.5703125, "memory_available_mb": 2998.69140625, "memory_mb": 12774.5703125, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:33:53,633 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:33:53.633760", "cpu_percent": 0.0, "memory_percent": 80.9, "memory_used_mb": 12763.9765625, "memory_available_mb": 3009.28515625, "memory_mb": 12763.9765625, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:34:13,689 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:34:13.688073", "cpu_percent": 0.0, "memory_percent": 80.3, "memory_used_mb": 12664.28125, "memory_available_mb": 3108.98046875, "memory_mb": 12664.28125, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:34:33,744 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:34:33.743451", "cpu_percent": 0.0, "memory_percent": 80.4, "memory_used_mb": 12675.63671875, "memory_available_mb": 3097.625, "memory_mb": 12675.63671875, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:34:53,798 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:34:53.798151", "cpu_percent": 0.0, "memory_percent": 80.3, "memory_used_mb": 12669.3125, "memory_available_mb": 3103.94921875, "memory_mb": 12669.3125, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:35:13,854 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:35:13.853279", "cpu_percent": 0.0, "memory_percent": 81.2, "memory_used_mb": 12809.19140625, "memory_available_mb": 2964.0703125, "memory_mb": 12809.19140625, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:35:33,906 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:35:33.906167", "cpu_percent": 0.0, "memory_percent": 80.6, "memory_used_mb": 12714.66796875, "memory_available_mb": 3058.59375, "memory_mb": 12714.66796875, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:35:53,964 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:35:53.964100", "cpu_percent": 0.0, "memory_percent": 79.6, "memory_used_mb": 12561.5234375, "memory_available_mb": 3211.73828125, "memory_mb": 12561.5234375, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:36:14,022 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:36:14.020570", "cpu_percent": 0.0, "memory_percent": 79.1, "memory_used_mb": 12473.18359375, "memory_available_mb": 3300.078125, "memory_mb": 12473.18359375, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:36:34,080 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:36:34.080306", "cpu_percent": 29.4, "memory_percent": 78.6, "memory_used_mb": 12403.3125, "memory_available_mb": 3369.94921875, "memory_mb": 12403.3125, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:36:54,140 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:36:54.139126", "cpu_percent": 30.0, "memory_percent": 79.0, "memory_used_mb": 12456.32421875, "memory_available_mb": 3316.9375, "memory_mb": 12456.32421875, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:37:14,197 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:37:14.196243", "cpu_percent": 0.0, "memory_percent": 80.0, "memory_used_mb": 12612.73828125, "memory_available_mb": 3160.5234375, "memory_mb": 12612.73828125, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:37:34,255 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:37:34.255978", "cpu_percent": 0.0, "memory_percent": 80.2, "memory_used_mb": 12654.62890625, "memory_available_mb": 3118.6328125, "memory_mb": 12654.62890625, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:39:41,322 - desktop_app.email_auth - WARNING - Secure storage not available, using keyring fallback
+2025-08-12 01:39:42,120 - matplotlib.font_manager - INFO - generated new fontManager
+2025-08-12 01:39:42,981 - desktop_app.email_auth - WARNING - Secure storage not available, using keyring fallback
+2025-08-12 01:39:43,090 - desktop_app.email_auth - INFO - Auto-login successful (local): testuser@gmail.com
+2025-08-12 01:39:44,604 - __main__ - INFO - User authenticated: testuser@gmail.com
+2025-08-12 01:39:44,605 - desktop_app.auth - INFO - Using OAuth credentials from: configs\client_secret_826138217044-p1qiu2ohq2mh2cn12k9phavhv7vim98q.apps.googleusercontent.com.json
+2025-08-12 01:39:44,605 - desktop_app.metrics - INFO - Performance monitor initialized with 2.0s interval
+2025-08-12 01:39:44,606 - desktop_app.sync - INFO - Local database initialized
+2025-08-12 01:39:44,608 - desktop_app.sync - INFO - Database migration completed
+2025-08-12 01:39:44,677 - botocore.credentials - INFO - Found credentials in environment variables.
+2025-08-12 01:39:44,839 - desktop_app.sync - INFO - S3 client initialized
+2025-08-12 01:39:44,840 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754942984
+2025-08-12 01:39:44,841 - desktop_app.eye_tracker_ui - INFO - Production eye tracker initialized successfully
+2025-08-12 01:39:44,841 - desktop_app.eye_tracker_ui - INFO - Production EyeTrackerUI initialized
+2025-08-12 01:39:44,843 - desktop_app.data_storage - INFO - Blink events table migrated successfully
+2025-08-12 01:39:44,843 - desktop_app.data_storage - INFO - Sessions table migrated successfully
+2025-08-12 01:39:44,843 - desktop_app.data_storage - INFO - Database initialized successfully
+2025-08-12 01:39:44,843 - desktop_app.eye_tracker - INFO - Production eye tracker initialized - Session: session_1754942984
+2025-08-12 01:39:44,843 - __main__ - INFO - Core components initialized successfully
+2025-08-12 01:39:44,873 - __main__ - INFO - Wellness at Work application initialized successfully
+2025-08-12 01:39:44,943 - desktop_app.metrics - INFO - Performance monitoring started
+2025-08-12 01:39:44,952 - desktop_app.sync - INFO - Sync manager started
+2025-08-12 01:39:44,952 - __main__ - INFO - Application started successfully
+2025-08-12 01:39:58,576 - google_auth_oauthlib.flow - INFO - "GET /?state=nafGRQ5YjzmvY9SvaA4pnfjCsfKtLN&code=4%2F0AVMBsJgL66E0NA-pJ0vkFgKw7OJFJat4mX3daeI60qitoB4BQcQRteTUf1xh2HanyMGUFw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent HTTP/1.1" 200 65
+2025-08-12 01:39:58,929 - desktop_app.auth - INFO - Credentials saved successfully
+2025-08-12 01:39:58,930 - desktop_app.auth - INFO - Credentials saved to secure storage
+2025-08-12 01:39:59,106 - desktop_app.auth - INFO - User saved to secure storage
+2025-08-12 01:40:03,011 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:40:03.011586", "cpu_percent": 9.1, "memory_percent": 82.3, "memory_used_mb": 12984.359375, "memory_available_mb": 2788.90234375, "memory_mb": 12984.359375, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:40:07,090 - desktop_app.eye_tracker - INFO - Starting eye tracking...
+2025-08-12 01:40:07,090 - desktop_app.eye_tracker - INFO - Initializing camera...
+2025-08-12 01:40:07,090 - desktop_app.eye_tracker - INFO - Trying camera index 0 with backend 700
+2025-08-12 01:40:09,647 - desktop_app.eye_tracker - INFO - Camera configured successfully
+2025-08-12 01:40:10,042 - desktop_app.eye_tracker - INFO - Camera verified: 640x480
+2025-08-12 01:40:10,042 - desktop_app.eye_tracker - INFO - Camera initialized successfully: index 0, backend 700
+2025-08-12 01:40:10,050 - desktop_app.eye_tracker - INFO - MediaPipe Face Mesh initialized
+2025-08-12 01:40:10,050 - desktop_app.eye_tracker - INFO - Tracking loop started
+2025-08-12 01:40:10,050 - desktop_app.eye_tracker - INFO - Eye tracking started successfully
+2025-08-12 01:40:12,160 - desktop_app.data_storage - INFO - Started new session: session_1754943012
+2025-08-12 01:40:20,027 - desktop_app.eye_tracker - INFO - Stopping eye tracking...
+2025-08-12 01:40:20,059 - desktop_app.eye_tracker - INFO - Tracking loop ended
+2025-08-12 01:40:20,447 - desktop_app.eye_tracker - INFO - Camera released
+2025-08-12 01:40:20,451 - desktop_app.eye_tracker - INFO - Resources cleaned up
+2025-08-12 01:40:20,451 - desktop_app.eye_tracker - ERROR - Error during cleanup: Closing SolutionBase._graph which is already None
+2025-08-12 01:40:20,451 - desktop_app.eye_tracker - INFO - Eye tracking stopped. Final stats - Frames: 302, Blinks: 16, Detection Rate: 100.0%
+2025-08-12 01:40:23,078 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:40:23.077672", "cpu_percent": 0.0, "memory_percent": 81.3, "memory_used_mb": 12820.2109375, "memory_available_mb": 2953.05078125, "memory_mb": 12820.2109375, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:40:43,141 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:40:43.141683", "cpu_percent": 0.0, "memory_percent": 82.2, "memory_used_mb": 12969.1640625, "memory_available_mb": 2804.09765625, "memory_mb": 12969.1640625, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:41:03,200 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:41:03.199089", "cpu_percent": 18.2, "memory_percent": 82.8, "memory_used_mb": 13052.55859375, "memory_available_mb": 2720.703125, "memory_mb": 13052.55859375, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:41:23,257 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:41:23.257956", "cpu_percent": 75.0, "memory_percent": 82.1, "memory_used_mb": 12949.09765625, "memory_available_mb": 2824.1640625, "memory_mb": 12949.09765625, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:41:43,314 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:41:43.314958", "cpu_percent": 0.0, "memory_percent": 81.0, "memory_used_mb": 12777.9140625, "memory_available_mb": 2995.34765625, "memory_mb": 12777.9140625, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:42:03,374 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:42:03.374015", "cpu_percent": 0.0, "memory_percent": 82.0, "memory_used_mb": 12938.54296875, "memory_available_mb": 2834.71875, "memory_mb": 12938.54296875, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:42:23,437 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:42:23.437185", "cpu_percent": 0.0, "memory_percent": 81.6, "memory_used_mb": 12874.78515625, "memory_available_mb": 2898.4765625, "memory_mb": 12874.78515625, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:42:43,495 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:42:43.495719", "cpu_percent": 20.0, "memory_percent": 80.9, "memory_used_mb": 12760.984375, "memory_available_mb": 3012.27734375, "memory_mb": 12760.984375, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:43:03,558 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:43:03.558037", "cpu_percent": 0.0, "memory_percent": 83.4, "memory_used_mb": 13150.421875, "memory_available_mb": 2622.83984375, "memory_mb": 13150.421875, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:43:23,615 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:43:23.615691", "cpu_percent": 25.0, "memory_percent": 80.8, "memory_used_mb": 12749.79296875, "memory_available_mb": 3023.46875, "memory_mb": 12749.79296875, "disk_percent": 32.6, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:43:43,672 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:43:43.672449", "cpu_percent": 0.0, "memory_percent": 81.0, "memory_used_mb": 12774.0390625, "memory_available_mb": 2999.22265625, "memory_mb": 12774.0390625, "disk_percent": 32.7, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:44:03,729 - performance_spikes - WARNING - MEMORY spike: 88.1% (threshold: 85.0%)
+2025-08-12 01:44:03,729 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:44:03.729957", "cpu_percent": 0.0, "memory_percent": 88.1, "memory_used_mb": 13895.52734375, "memory_available_mb": 1877.734375, "memory_mb": 13895.52734375, "disk_percent": 32.7, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:44:23,788 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:44:23.787201", "cpu_percent": 13.3, "memory_percent": 87.6, "memory_used_mb": 13810.41015625, "memory_available_mb": 1962.8515625, "memory_mb": 13810.41015625, "disk_percent": 32.7, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:44:31,818 - performance_spikes - WARNING - CPU spike: 100.0% (threshold: 80.0%)
+2025-08-12 01:44:31,818 - performance_spikes - WARNING - MEMORY spike: 86.0% (threshold: 85.0%)
+2025-08-12 01:44:43,859 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:44:43.858760", "cpu_percent": 0.0, "memory_percent": 86.7, "memory_used_mb": 13677.4375, "memory_available_mb": 2095.82421875, "memory_mb": 13677.4375, "disk_percent": 32.7, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:44:47,475 - desktop_app.sync - ERROR - Failed to upload events to S3: An error occurred (InvalidAccessKeyId) when calling the PutObject operation: The AWS Access Key Id you provided does not exist in our records.
+2025-08-12 01:45:03,920 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:45:03.920820", "cpu_percent": 0.0, "memory_percent": 79.8, "memory_used_mb": 12582.7734375, "memory_available_mb": 3190.48828125, "memory_mb": 12582.7734375, "disk_percent": 32.7, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:45:23,983 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:45:23.983021", "cpu_percent": 0.0, "memory_percent": 79.9, "memory_used_mb": 12596.48828125, "memory_available_mb": 3176.7734375, "memory_mb": 12596.48828125, "disk_percent": 32.7, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:45:32,010 - performance_spikes - WARNING - CPU spike: 100.0% (threshold: 80.0%)
+2025-08-12 01:45:44,045 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:45:44.044899", "cpu_percent": 0.0, "memory_percent": 80.0, "memory_used_mb": 12615.09765625, "memory_available_mb": 3158.1640625, "memory_mb": 12615.09765625, "disk_percent": 32.7, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:45:58,086 - performance_spikes - WARNING - CPU spike: 82.4% (threshold: 80.0%)
+2025-08-12 01:46:04,111 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:46:04.111982", "cpu_percent": 50.0, "memory_percent": 81.4, "memory_used_mb": 12837.24609375, "memory_available_mb": 2936.015625, "memory_mb": 12837.24609375, "disk_percent": 32.7, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:46:24,167 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:46:24.167284", "cpu_percent": 0.0, "memory_percent": 78.8, "memory_used_mb": 12432.48046875, "memory_available_mb": 3340.78125, "memory_mb": 12432.48046875, "disk_percent": 32.7, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:46:44,226 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:46:44.226342", "cpu_percent": 0.0, "memory_percent": 79.1, "memory_used_mb": 12484.484375, "memory_available_mb": 3288.77734375, "memory_mb": 12484.484375, "disk_percent": 32.7, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:47:04,281 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:47:04.281797", "cpu_percent": 33.3, "memory_percent": 79.3, "memory_used_mb": 12506.1796875, "memory_available_mb": 3267.08203125, "memory_mb": 12506.1796875, "disk_percent": 32.7, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:47:24,339 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:47:24.339812", "cpu_percent": 0.0, "memory_percent": 81.3, "memory_used_mb": 12818.6796875, "memory_available_mb": 2954.58203125, "memory_mb": 12818.6796875, "disk_percent": 32.8, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:47:44,405 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:47:44.404285", "cpu_percent": 0.0, "memory_percent": 81.3, "memory_used_mb": 12817.33203125, "memory_available_mb": 2955.9296875, "memory_mb": 12817.33203125, "disk_percent": 32.9, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}
+2025-08-12 01:48:04,468 - performance_metrics - INFO - {"timestamp": "2025-08-12T01:48:04.467149", "cpu_percent": 76.9, "memory_percent": 78.7, "memory_used_mb": 12415.50390625, "memory_available_mb": 3357.7578125, "memory_mb": 12415.50390625, "disk_percent": 33.2, "battery_percent": 60, "battery_time_left": 2400, "battery_plugged": true, "power_consumption": 63.0}

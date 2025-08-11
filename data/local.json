@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "created_at": "2024-01-01T00:00:00Z",
+  "last_updated": "2024-01-01T00:00:00Z",
+  "events": [],
+  "sync_history": [],
+  "user_data": {},
+  "settings": {
+    "backup_enabled": true,
+    "auto_sync": true,
+    "privacy_level": "standard"
+  }
+} 

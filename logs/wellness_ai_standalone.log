@@ -1,0 +1,55 @@
+2025-08-08 15:58:47,725 - desktop_app.email_auth - ERROR - Auto-login request failed: HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/auth/validate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000201037B5EE0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-08-08 15:58:47,726 - desktop_app.auth - INFO - Using OAuth credentials from: configs\client_secret_826138217044-p1qiu2ohq2mh2cn12k9phavhv7vim98q.apps.googleusercontent.com.json
+2025-08-08 15:58:48,130 - desktop_app.auth - INFO - Credentials saved successfully
+2025-08-08 15:58:48,131 - desktop_app.auth - INFO - Credentials saved to secure storage
+2025-08-08 15:59:42,557 - desktop_app.email_auth - ERROR - Auto-login request failed: HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/auth/validate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C29FF52360>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-08-08 15:59:42,558 - desktop_app.auth - INFO - Using OAuth credentials from: configs\client_secret_826138217044-p1qiu2ohq2mh2cn12k9phavhv7vim98q.apps.googleusercontent.com.json
+2025-08-08 15:59:42,929 - desktop_app.auth - INFO - Credentials saved successfully
+2025-08-08 15:59:42,930 - desktop_app.auth - INFO - Credentials saved to secure storage
+2025-08-08 15:59:57,369 - __main__ - INFO - Authentication cancelled or failed
+2025-08-08 16:12:13,303 - desktop_app.secure_storage - INFO - Generated new encryption key
+2025-08-08 16:12:13,371 - desktop_app.secure_storage - INFO - All databases initialized successfully
+2025-08-08 16:12:13,373 - desktop_app.secure_storage - INFO - Secure data manager initialized with GDPR compliance
+2025-08-08 16:12:30,081 - desktop_app.auth - INFO - Using OAuth credentials from: configs\client_secret_826138217044-p1qiu2ohq2mh2cn12k9phavhv7vim98q.apps.googleusercontent.com.json
+2025-08-08 16:12:30,082 - desktop_app.auth - INFO - Starting authentication process...
+2025-08-08 16:12:30,086 - desktop_app.auth - INFO - Loaded existing credentials: True
+2025-08-08 16:12:30,419 - desktop_app.auth - INFO - Credentials saved successfully
+2025-08-08 16:12:30,419 - desktop_app.auth - INFO - Credentials saved to secure storage
+2025-08-08 16:12:30,419 - desktop_app.auth - INFO - Using existing credentials
+2025-08-08 16:12:30,630 - desktop_app.auth - INFO - Successfully retrieved user info for: samay.m2504@gmail.com
+2025-08-08 16:12:32,143 - __main__ - INFO - User authenticated: samay.m2504@gmail.com
+2025-08-08 16:12:37,324 - __main__ - INFO - Standalone app initialized for user: samay.m2504@gmail.com
+2025-08-08 16:12:37,325 - __main__ - INFO - Starting standalone WellnessAI application...
+2025-08-08 16:22:40,422 - desktop_app.secure_storage - INFO - All databases initialized successfully
+2025-08-08 16:22:40,432 - desktop_app.secure_storage - INFO - Secure data manager initialized with GDPR compliance
+2025-08-08 16:22:49,184 - desktop_app.auth - INFO - Using OAuth credentials from: configs\client_secret_826138217044-p1qiu2ohq2mh2cn12k9phavhv7vim98q.apps.googleusercontent.com.json
+2025-08-08 16:22:49,185 - desktop_app.auth - INFO - Starting authentication process...
+2025-08-08 16:22:49,187 - desktop_app.auth - INFO - Loaded existing credentials: True
+2025-08-08 16:22:49,526 - desktop_app.auth - INFO - Credentials saved successfully
+2025-08-08 16:22:49,526 - desktop_app.auth - INFO - Credentials saved to secure storage
+2025-08-08 16:22:49,527 - desktop_app.auth - INFO - Using existing credentials
+2025-08-08 16:22:49,722 - desktop_app.auth - INFO - Successfully retrieved user info for: samay.m2504@gmail.com
+2025-08-08 16:22:51,232 - __main__ - INFO - User authenticated: samay.m2504@gmail.com
+2025-08-08 16:22:53,268 - __main__ - INFO - Standalone app initialized for user: samay.m2504@gmail.com
+2025-08-08 16:22:53,268 - __main__ - INFO - Starting standalone WellnessAI application...
+2025-08-08 16:25:40,865 - __main__ - ERROR - Authentication error: No module named 'desktop_app.auth'
+2025-08-08 16:25:40,865 - __main__ - ERROR - Failed to initialize standalone app: No module named 'desktop_app.auth'
+2025-08-08 16:34:46,160 - __main__ - INFO - Standalone app initialized successfully
+2025-08-08 16:34:46,161 - __main__ - INFO - Starting standalone WellnessAI application...
+2025-08-08 16:34:46,161 - __main__ - ERROR - Runtime error: 'StandaloneWellnessApp' object has no attribute 'authenticated_user'
+2025-08-08 16:39:52,128 - __main__ - INFO - Standalone app initialized successfully
+2025-08-08 16:39:52,797 - desktop_app.email_auth - WARNING - Secure storage not available, using keyring fallback
+2025-08-08 16:39:56,835 - desktop_app.auth - INFO - Using OAuth credentials from: configs\client_secret_826138217044-p1qiu2ohq2mh2cn12k9phavhv7vim98q.apps.googleusercontent.com.json
+2025-08-08 16:39:56,835 - desktop_app.auth - INFO - Starting authentication process...
+2025-08-08 16:39:56,965 - desktop_app.auth - INFO - Loaded existing credentials: True
+2025-08-08 16:39:57,333 - desktop_app.auth - INFO - Credentials saved successfully
+2025-08-08 16:39:57,333 - desktop_app.auth - INFO - Credentials saved to secure storage
+2025-08-08 16:39:57,333 - desktop_app.auth - INFO - Using existing credentials
+2025-08-08 16:39:57,514 - desktop_app.auth - INFO - Successfully retrieved user info for: samay.m2504@gmail.com
+2025-08-08 16:39:59,029 - __main__ - INFO - User authenticated: samay.m2504@gmail.com
+2025-08-08 16:39:59,030 - __main__ - INFO - User authenticated: samay.m2504@gmail.com
+2025-08-08 16:39:59,088 - __main__ - INFO - Eye tracking started successfully
+2025-08-08 16:39:59,526 - desktop_app.enhanced_eye_tracker - INFO - Face cascade loaded from C:\Users\Samay Mehar\AppData\Local\Programs\Python\Python312\Lib\site-packages\cv2\data\haarcascade_frontalface_alt.xml
+2025-08-08 16:39:59,549 - desktop_app.enhanced_eye_tracker - INFO - Eye cascade loaded from C:\Users\Samay Mehar\AppData\Local\Programs\Python\Python312\Lib\site-packages\cv2\data\haarcascade_eye.xml
+2025-08-08 16:40:13,224 - desktop_app.enhanced_eye_tracker - INFO - Eye tracking started
+2025-08-08 16:40:43,261 - desktop_app.enhanced_eye_tracker - WARNING - Low blink rate detected: 0.0 bpm

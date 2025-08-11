@@ -1,0 +1,93 @@
+# Wellness at Work Application Requirements
+# Production-grade dependencies for cross-platform eye tracking application
+
+#############################################
+# DESKTOP APPLICATION DEPENDENCIES
+#############################################
+
+# Core GUI Framework
+PyQt6>=6.5.0
+PyQt6-Qt6>=6.5.0
+PyQt6-sip>=13.5.0
+
+# Computer Vision and Image Processing
+opencv-python>=4.8.0
+mediapipe>=0.10.0
+numpy>=1.24.0
+
+# System Monitoring
+psutil>=5.9.0
+
+# Authentication and Security
+google-auth>=2.23.0
+google-auth-oauthlib>=1.0.0
+google-auth-httplib2>=0.1.0
+keyring>=24.2.0
+cryptography>=41.0.0
+
+# Cloud Storage and API
+boto3>=1.29.0
+botocore>=1.32.0
+requests>=2.31.0
+
+# Configuration and Serialization
+PyYAML>=6.0
+python-json-logger>=2.0.0
+python-dotenv>=1.0.0
+
+#############################################
+# BACKEND API DEPENDENCIES
+#############################################
+
+# Web Framework
+Flask>=2.3.0
+Flask-CORS>=4.0.0
+Flask-SQLAlchemy>=3.0.0
+Flask-Migrate>=4.0.0
+
+# Database
+SQLAlchemy>=2.0.0
+psycopg2-binary>=2.9.0  # PostgreSQL
+pymysql>=1.1.0  # MySQL
+
+# Authentication and Security
+PyJWT>=2.8.0
+Werkzeug>=2.3.0
+bcrypt>=4.0.0
+
+# Production Server
+gunicorn>=21.0.0
+gevent>=23.0.0
+
+# Data Processing
+pandas>=2.0.0
+
+#############################################
+# DEVELOPMENT AND TESTING
+#############################################
+
+# Testing
+pytest>=7.4.0
+pytest-qt>=4.2.0
+pytest-flask>=1.2.0
+pytest-cov>=4.1.0
+
+# Code Quality
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# Packaging and Distribution
+pyinstaller>=5.13.0
+cx-Freeze>=6.15.0
+
+#############################################
+# PLATFORM-SPECIFIC DEPENDENCIES
+#############################################
+
+# Windows
+pywin32>=306; sys_platform == "win32"
+
+# macOS
+pyobjc-framework-Cocoa>=10.0; sys_platform == "darwin"
+pyobjc-framework-Quartz>=10.0; sys_platform == "darwin"

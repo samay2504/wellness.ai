@@ -1,0 +1,81 @@
+# Wellness at Work Configuration
+# Production-grade configuration for the eye tracking application
+
+app:
+  name: "Wellness at Work"
+  version: "1.0.0"
+  debug: false
+  log_level: "INFO"
+  log_file: "logs/wellness_ai.log"
+
+tracking:
+  ear_threshold: 0.21
+  consecutive_frames: 2
+  fps_limit: 30
+  camera_index: 0
+  face_detection_confidence: 0.5
+  tracking_confidence: 0.5
+
+storage:
+  local_db: "data/local.db"
+  json_backup: "data/local.json"
+  s3_bucket: "wellness-ai-data"
+  s3_region: "us-east-1"
+  sync_interval: 300  # 5 minutes
+  batch_size: 100
+
+privacy:
+  data_retention_days: 730  # 2 years
+  anonymize_after_days: 365  # 1 year
+  auto_delete_inactive: true
+  consent_required: true
+  gdpr_compliant: true
+
+performance:
+  monitor_interval: 1.0  # seconds
+  energy_thresholds:
+    low: 20.0
+    medium: 50.0
+    high: 80.0
+  memory_warning_threshold: 80.0  # percentage
+  cpu_warning_threshold: 90.0  # percentage
+
+notifications:
+  blink_rate_warning: true
+  low_blink_threshold: 10  # blinks per minute
+  system_tray_enabled: true
+  desktop_notifications: true
+
+security:
+  jwt_secret_key: "your-jwt-secret-key-change-this"
+  session_timeout: 3600  # 1 hour
+  max_login_attempts: 5
+  password_min_length: 8
+  require_strong_password: true
+
+cloud:
+  aws_region: "us-east-1"
+  backup_enabled: true
+  backup_interval: 86400  # 24 hours
+  encryption_enabled: true
+  ssl_required: true
+
+ui:
+  theme: "modern"
+  language: "en"
+  auto_hide_tray: true
+  show_performance_metrics: true
+  show_sync_status: true
+  window_size:
+    width: 800
+    height: 600
+  window_position:
+    x: 100
+    y: 100
+
+development:
+  hot_reload: false
+  debug_mode: false
+  test_mode: false
+  mock_camera: false
+  mock_cloud: false 

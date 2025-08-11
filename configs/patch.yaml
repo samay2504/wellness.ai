@@ -1,0 +1,48 @@
+# Patch Manager Configuration
+# Settings for creating and applying application patches
+
+patch_format: "zip"
+compression: true
+backup_before_apply: true
+validate_signatures: false
+
+# Files and directories to exclude from patches
+exclude_patterns:
+  - "*.pyc"
+  - "__pycache__"
+  - ".git"
+  - "*.log"
+  - "data/*.db"
+  - "logs/*"
+  - "temp/*"
+  - "*.tmp"
+  - ".env"
+  - "configs/credentials.json"
+  - "*.key"
+  - "*.pem"
+
+# Version control settings
+version_control:
+  auto_tag: true
+  tag_prefix: "v"
+  commit_message_template: "Release version {version}"
+
+# Backup settings
+backup:
+  enabled: true
+  max_backups: 10
+  backup_dir: "backups"
+  compress_backups: true
+
+# Validation settings
+validation:
+  check_file_integrity: true
+  verify_dependencies: true
+  test_after_apply: true
+
+# Distribution settings
+distribution:
+  upload_to_s3: false
+  s3_bucket: "wellness-ai-patches"
+  notify_users: false
+  auto_update: false 

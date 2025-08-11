@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run pytest for UI tests",
+			"type": "shell",
+			"command": "python -m pytest -q tests/test_ui.py tests/test_ui_fixed.py",
+			"isBackground": false,
+			"problemMatcher": [
+				"$pytest - q"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Run pytest for UI tests again",
+			"type": "shell",
+			"command": "python -m pytest -q tests/test_ui.py tests/test_ui_fixed.py",
+			"isBackground": false,
+			"problemMatcher": [
+				"$pytest - q"
+			],
+			"group": "build"
+		}
+	]
+}

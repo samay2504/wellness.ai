@@ -1,0 +1,82 @@
+{
+  "events": [
+    {
+      "id": "2951792b-609e-479e-81e9-841a1486f7eb",
+      "user_id": "test_user_123",
+      "timestamp": 1754940327.2381268,
+      "count": 1,
+      "session_id": "session_1754940327",
+      "device_id": "ef1eb20c",
+      "created_at": "2025-08-12T00:55:27.238126",
+      "open_closed": "open",
+      "direction": "left",
+      "confidence": 0.8,
+      "ear_left": 0.25,
+      "ear_right": 0.26
+    },
+    {
+      "id": "beebf28b-1d3c-4b4f-873c-6eba48a55383",
+      "user_id": "test_user_123",
+      "timestamp": 1754940327.346128,
+      "count": 2,
+      "session_id": "session_1754940327",
+      "device_id": "ef1eb20c",
+      "created_at": "2025-08-12T00:55:27.346127",
+      "open_closed": "open",
+      "direction": "right",
+      "confidence": 0.8500000000000001,
+      "ear_left": 0.26,
+      "ear_right": 0.27
+    },
+    {
+      "id": "7dac856d-67bc-4799-af98-5dc55099d767",
+      "user_id": "test_user_123",
+      "timestamp": 1754940327.4547942,
+      "count": 3,
+      "session_id": "session_1754940327",
+      "device_id": "ef1eb20c",
+      "created_at": "2025-08-12T00:55:27.454794",
+      "open_closed": "open",
+      "direction": "left",
+      "confidence": 0.9,
+      "ear_left": 0.27,
+      "ear_right": 0.28
+    },
+    {
+      "id": "e0d9e412-3726-4a11-90cc-8f5c95f59bf0",
+      "user_id": "test_user_123",
+      "timestamp": 1754940327.5636375,
+      "count": 4,
+      "session_id": "session_1754940327",
+      "device_id": "ef1eb20c",
+      "created_at": "2025-08-12T00:55:27.563637",
+      "open_closed": "open",
+      "direction": "right",
+      "confidence": 0.9500000000000001,
+      "ear_left": 0.28,
+      "ear_right": 0.29000000000000004
+    },
+    {
+      "id": "bcd7e5e2-b9e6-4242-bc60-b55e2f3165c8",
+      "user_id": "test_user_123",
+      "timestamp": 1754940327.6723177,
+      "count": 5,
+      "session_id": "session_1754940327",
+      "device_id": "ef1eb20c",
+      "created_at": "2025-08-12T00:55:27.672317",
+      "open_closed": "open",
+      "direction": "left",
+      "confidence": 1.0,
+      "ear_left": 0.29,
+      "ear_right": 0.3
+    }
+  ],
+  "session_metadata": {
+    "session_id": "session_1754940327",
+    "user_id": "test_user_123",
+    "device_id": "ef1eb20c",
+    "created_at": "2025-08-12T00:55:27.230096"
+  },
+  "last_updated": "2025-08-12T00:55:27.788564",
+  "event_count": 5
+}

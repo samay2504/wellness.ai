@@ -1,0 +1,18 @@
+# Wellness at Work Desktop App Packaging Requirements
+# Additional dependencies needed for packaging the application
+
+# Packaging Tools
+pyinstaller>=5.13.0
+auto-py-to-exe>=2.40.0
+
+# Runtime Dependencies for PyInstaller
+pillow>=10.0.0
+packaging>=23.0
+
+# Windows-specific packaging (MSIX)
+msix-packaging>=1.0.0
+
+# Additional dependencies that might be missed by PyInstaller
+altgraph>=0.17.3
+pefile>=2023.2.7
+pywin32-ctypes>=0.2.2

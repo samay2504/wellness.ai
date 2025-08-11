@@ -1,0 +1,29 @@
+# Environment
+.env
+*.env
+**/.env
+**/.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Build/Dist
+build/
+dist/
+
+# Node
+web_dashboard/node_modules/
+web_dashboard/.cache/
+web_dashboard/build/
+
+# Credentials (do not commit secrets)
+configs/*.json
+backend/instance/
+backend/*.db
+src/desktop_app/data/
+src/desktop_app/logs/

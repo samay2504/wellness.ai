@@ -1,0 +1,56 @@
+# Production Requirements for WellnessAI Desktop Application
+
+## Core Dependencies
+redis==6.4.0
+PyJWT==2.10.1
+passlib==1.7.4
+PyQt6==6.8.0
+PyQt6-Qt6==6.8.0
+mediapipe==0.10.20
+opencv-python==4.10.0.84
+psutil==6.1.0
+google-auth==2.35.0
+google-auth-oauthlib==1.2.1
+requests==2.32.3
+Pillow==11.0.0
+keyring==25.5.0
+cryptography==43.0.3
+
+## Development Dependencies
+PyInstaller==6.15.0
+pytest==8.4.1
+pytest-cov==6.0.0
+pytest-qt==4.5.0
+bandit==1.8.0
+black==24.10.0
+flake8==7.1.1
+mypy==1.14.0
+pre-commit==4.0.1
+
+## Packaging Dependencies
+msix-packaging==1.0.0
+pywin32==308
+setuptools==75.6.0
+wheel==0.45.1
+twine==6.0.1
+
+## Authentication & Security
+bcrypt==4.2.1
+PyJWT[crypto]==2.10.1
+redis[hiredis]==6.4.0
+passlib[bcrypt]==1.7.4
+
+## Data Processing
+numpy==1.26.4
+pandas==2.2.3
+matplotlib==3.9.2
+
+## System Integration
+plyer==2.1.0
+pyautogui==0.9.54
+pystray==0.19.5
+
+## Optional Cloud Dependencies (Future)
+boto3==1.35.80
+azure-storage-blob==12.24.0
+google-cloud-storage==2.18.2

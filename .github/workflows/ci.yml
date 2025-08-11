@@ -1,0 +1,288 @@
+name: Wellness at Work CI/CD
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  release:
+    types: [ published ]
+
+env:
+  PYTHON_VERSION: '3.11'
+  NODE_VERSION: '18'
+
+jobs:
+  test-desktop:
+    name: Test Desktop Application
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: ['3.11']
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Cache pip dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install -r backend/requirements.txt
+    
+    - name: Run linting
+      run: |
+        flake8 src/ backend/ tests/
+        black --check src/ backend/ tests/
+        mypy src/ backend/
+    
+    - name: Run tests
+      run: |
+        pytest tests/ -v --cov=src --cov=backend --cov-report=xml
+    
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./coverage.xml
+        flags: desktop
+        name: desktop-coverage
+
+  test-backend:
+    name: Test Backend API
+    runs-on: ubuntu-latest
+    
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: wellness_test
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r backend/requirements.txt
+    
+    - name: Run backend tests
+      env:
+        DATABASE_URL: postgresql://postgres:postgres@localhost:5432/wellness_test
+        SECRET_KEY: test-secret-key
+        JWT_SECRET_KEY: test-jwt-secret
+      run: |
+        cd backend
+        pytest tests/ -v --cov=app --cov-report=xml
+    
+    - name: Upload backend coverage
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./backend/coverage.xml
+        flags: backend
+        name: backend-coverage
+
+  test-web-dashboard:
+    name: Test Web Dashboard
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+        cache-dependency-path: web_dashboard/package-lock.json
+    
+    - name: Install dependencies
+      run: |
+        cd web_dashboard
+        npm ci
+    
+    - name: Run linting
+      run: |
+        cd web_dashboard
+        npm run lint
+    
+    - name: Run tests
+      run: |
+        cd web_dashboard
+        npm test -- --coverage --watchAll=false
+    
+    - name: Build production
+      run: |
+        cd web_dashboard
+        npm run build
+
+  security-scan:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: Install security tools
+      run: |
+        pip install bandit safety
+    
+    - name: Run security scan
+      run: |
+        bandit -r src/ backend/ -f json -o bandit-report.json
+        safety check --json --output safety-report.json
+    
+    - name: Upload security reports
+      uses: actions/upload-artifact@v3
+      with:
+        name: security-reports
+        path: |
+          bandit-report.json
+          safety-report.json
+
+  build-desktop:
+    name: Build Desktop Application
+    needs: [test-desktop, test-backend, test-web-dashboard, security-scan]
+    runs-on: ${{ matrix.os }}
+    if: github.event_name == 'release'
+    strategy:
+      matrix:
+        os: [windows-latest, macos-latest]
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pyinstaller
+    
+    - name: Build Windows executable
+      if: matrix.os == 'windows-latest'
+      run: |
+        pyinstaller --onefile --windowed --name WellnessAI src/desktop_app/main.py
+        # Create installer (requires additional tools)
+    
+    - name: Build macOS app
+      if: matrix.os == 'macos-latest'
+      run: |
+        pyinstaller --onefile --windowed --name WellnessAI src/desktop_app/main.py
+        # Create .app bundle and .dmg
+    
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: desktop-build-${{ matrix.os }}
+        path: |
+          dist/
+          build/
+
+  deploy-backend:
+    name: Deploy Backend
+    needs: [test-backend]
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v2
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+    
+    - name: Deploy to AWS
+      run: |
+        # Deploy backend to AWS (ECS, Lambda, etc.)
+        echo "Deploying backend to AWS..."
+    
+    - name: Run smoke tests
+      run: |
+        # Test deployed backend
+        curl -f ${{ secrets.BACKEND_URL }}/health
+
+  deploy-web-dashboard:
+    name: Deploy Web Dashboard
+    needs: [test-web-dashboard]
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+        cache-dependency-path: web_dashboard/package-lock.json
+    
+    - name: Install dependencies
+      run: |
+        cd web_dashboard
+        npm ci
+    
+    - name: Build production
+      run: |
+        cd web_dashboard
+        npm run build
+    
+    - name: Deploy to S3
+      uses: aws-actions/configure-aws-credentials@v2
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+    
+    - name: Upload to S3
+      run: |
+        aws s3 sync web_dashboard/build/ s3://${{ secrets.WEB_BUCKET }} --delete
+    
+    - name: Invalidate CloudFront
+      run: |
+        aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*" 

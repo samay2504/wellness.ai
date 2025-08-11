@@ -1,0 +1,71 @@
+/* App.css - Main styling for Wellness at Work web dashboard */
+
+/* Global styles */
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #0f172a 0%, #111827 60%, #141b2d 100%);
+  color: #e5e7eb;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body {
+  background-color: #0b1220;
+  color: #e5e7eb;
+  }
+}
+
+/* Animation for loading spinner */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .App {
+    padding: 0 1rem;
+  }
+}
+
+/* Subtle card styling */
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+  backdrop-filter: blur(6px);
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  border-color: rgba(99,102,241,0.4);
+}
+
+/* Animated accent for links/buttons */
+.accent-btn {
+  background: linear-gradient(90deg, #4f46e5, #6366f1, #8b5cf6);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  transition: filter 200ms ease, transform 120ms ease;
+}
+.accent-btn:hover { filter: brightness(1.08); }
+.accent-btn:active { transform: translateY(1px); }
+
+/* Chart animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.chart-container { animation: fadeInUp 320ms ease; }
