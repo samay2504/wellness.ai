@@ -60,13 +60,17 @@ const Analytics = () => {
     }
   });
 
-  // Fetch insights
+  // Fetch insights (backend returns { insights: [...], status: 'ok' })
   const { data: insights } = useQuery({
     queryKey: ['insights'],
     queryFn: async () => {
       const response = await fetch('/api/analytics/insights');
       if (!response.ok) throw new Error('Failed to fetch insights');
-      return response.json();
+      const payload = await response.json();
+      // Normalize to an array regardless of shape
+      if (Array.isArray(payload)) return payload;
+      if (payload && Array.isArray(payload.insights)) return payload.insights;
+      return [];
     }
   });
 
@@ -384,8 +388,8 @@ const Analytics = () => {
         </div>
       </div>
 
-      {/* Insights */}
-      {insights && (
+  {/* Insights */}
+  {Array.isArray(insights) && insights.length > 0 && (
         <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">AI Insights</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -413,6 +417,12 @@ const Analytics = () => {
               </div>
             ))}
           </div>
+        </div>
+      )}
+      {Array.isArray(insights) && insights.length === 0 && (
+        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">AI Insights</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">No insights available yet.</p>
         </div>
       )}
     </div>
