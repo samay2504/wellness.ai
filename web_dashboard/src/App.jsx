@@ -32,8 +32,10 @@ const queryClient = new QueryClient({
   },
 });
 
-// Configure axios defaults
-axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+// Configure axios defaults (strip any trailing /api to avoid duplication when components prefix /api)
+const RAW_API = (process.env.REACT_APP_API_URL || '').replace(/\/+$/, '');
+const API_HOST = RAW_API.replace(/\/api$/i, '');
+axios.defaults.baseURL = API_HOST || 'http://localhost:5000';
 axios.defaults.headers.common['Content-Type'] = 'application/json';
 
 // Protected route component

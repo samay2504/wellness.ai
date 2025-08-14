@@ -94,11 +94,11 @@ const EyeTracker = () => {
   const submitBlinkData = async (data) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.post('/blink-data', data, {
+      await axios.post('/api/blink-data', data, {
         headers: { Authorization: `Bearer ${token}` }
       });
     } catch (error) {
-      console.error('Error submitting blink data:', error);
+      console.error('Error submitting blink data:', error?.response?.data || error.message);
     }
   };
 

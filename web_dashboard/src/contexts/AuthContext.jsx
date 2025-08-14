@@ -4,8 +4,11 @@ import toast from 'react-hot-toast';
 
 const AuthContext = createContext();
 
-// Use CRA proxy by default in development; override via REACT_APP_API_URL when needed
-const API_BASE_URL = process.env.REACT_APP_API_URL || '';
+// Base URL logic handled in App.jsx (host only). Always prefix /api.
+const buildEndpoint = (path) => {
+  if (!path.startsWith('/')) path = '/' + path;
+  return '/api' + path;
+};
 
 export const useAuth = () => {
   const context = useContext(AuthContext);
@@ -36,10 +39,10 @@ export const AuthProvider = ({ children }) => {
     const checkAuth = async () => {
       if (token) {
         try {
-          const response = await axios.get(`${API_BASE_URL}/api/user/profile`);
+          const response = await axios.get(buildEndpoint('/user/profile'));
           setUser(response.data);
         } catch (error) {
-          console.error('Auth check failed:', error);
+          console.error('Auth check failed:', error?.response?.status, error?.response?.data);
           logout();
         }
       }
@@ -52,20 +55,17 @@ export const AuthProvider = ({ children }) => {
   // Login function
   const login = async (email, password) => {
     try {
-      const response = await axios.post(`${API_BASE_URL}/api/auth/login`, {
+      const response = await axios.post(buildEndpoint('/auth/login'), {
         email,
         password
       });
 
       const { token: authToken, user: userData } = response.data;
-      
       setToken(authToken);
       setUser(userData);
       localStorage.setItem('auth_token', authToken);
-      
       toast.success('Login successful!');
       return { success: true };
-      
     } catch (error) {
       const errorMessage = error.response?.data?.message || 'Login failed';
       toast.error(errorMessage);
@@ -76,21 +76,17 @@ export const AuthProvider = ({ children }) => {
   // Google login function
   const googleLogin = async (userData) => {
     try {
-      const response = await axios.post(`${API_BASE_URL}/api/auth/google`, {
+      const response = await axios.post(buildEndpoint('/auth/google'), {
         email: userData.email,
         name: userData.name,
         id: userData.id
       });
-
       const { token: authToken, user: userInfo } = response.data;
-      
       setToken(authToken);
       setUser(userInfo);
       localStorage.setItem('auth_token', authToken);
-      
       toast.success('Google login successful!');
       return { success: true };
-      
     } catch (error) {
       const errorMessage = error.response?.data?.message || 'Google login failed';
       toast.error(errorMessage);
@@ -101,17 +97,13 @@ export const AuthProvider = ({ children }) => {
   // Register function
   const register = async (userData) => {
     try {
-      const response = await axios.post(`${API_BASE_URL}/api/auth/register`, userData);
-      
+      const response = await axios.post(buildEndpoint('/auth/register'), userData);
       const { token: authToken, user: newUser } = response.data;
-      
       setToken(authToken);
       setUser(newUser);
       localStorage.setItem('auth_token', authToken);
-      
       toast.success('Registration successful!');
       return { success: true };
-      
     } catch (error) {
       const errorMessage = error.response?.data?.message || 'Registration failed';
       toast.error(errorMessage);
@@ -131,7 +123,7 @@ export const AuthProvider = ({ children }) => {
   // Submit blink data
   const submitBlinkData = async (blinkData) => {
     try {
-      const response = await axios.post(`${API_BASE_URL}/api/blink-data`, blinkData);
+      const response = await axios.post(buildEndpoint('/blink-data'), blinkData);
       return { success: true, data: response.data };
     } catch (error) {
       console.error('Failed to submit blink data:', error);
@@ -147,11 +139,10 @@ export const AuthProvider = ({ children }) => {
     login,
     googleLogin,
     register,
-  logout,
-  submitBlinkData,
-  // Expose setters for cases like OAuth callback flows
-  setToken,
-  setUser
+    logout,
+    submitBlinkData,
+    setToken,
+    setUser
   };
 
   return (

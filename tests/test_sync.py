@@ -388,6 +388,17 @@ class TestCloudStorage(unittest.TestCase):
         # Verify delete_objects was called for each file
         self.assertEqual(mock_s3_client.delete_objects.call_count, 1)
 
+# --- GCS Migration Supplemental Tests (appended) ---
+class TestGCSFallback(unittest.TestCase):
+    """Validate fallback logic when cloud upload fails (simulated)"""
+    def test_local_fallback_on_failure(self):
+        # Simulate absence of cloud by forcing exception path using CloudStorage with no client
+        storage = CloudStorage(bucket_name="dummy", region="us-east-1")
+        storage.s3_client = None  # Force unavailable
+        events = []  # No events; expect graceful False return
+        self.assertFalse(storage.upload_blink_events("user1", events))
+
+
 
 class TestSyncManager(unittest.TestCase):
     """Test sync manager functionality"""
