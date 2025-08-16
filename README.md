@@ -18,8 +18,8 @@ A comprehensive, production-grade eye-tracking application designed to promote w
 
 ### Cloud Backend
 - **RESTful API**: Flask-based backend with JWT authentication
-- **AWS Integration**: S3 storage and RDS PostgreSQL database
-- **Data Synchronization**: Automatic sync with conflict resolution
+- **Cloud Storage**: Google Cloud Storage (GCS) default, AWS S3 legacy support
+- **Data Synchronization**: Automatic sync with local fallback & conflict resolution
 - **GDPR Compliance**: Complete user data rights implementation
 - **Security**: Comprehensive security measures and audit logging
 
@@ -42,10 +42,10 @@ A comprehensive, production-grade eye-tracking application designed to promote w
 │ │ (MediaPipe) │ │    │ │ (JWT Auth)  │ │    │ │ (Charts)    │ │
 │ └─────────────┘ │    │ └─────────────┘ │    │ └─────────────┘ │
 │ ┌─────────────┐ │    │ ┌─────────────┐ │    │ ┌─────────────┐ │
-│ │ Auth (OAuth)│ │    │ │ PostgreSQL  │ │    │ │ User Mgmt   │ │
+│ │ Auth (OAuth)│ │    │ │ SQlite/JSON | │    │ │ User Mgmt   │ │
 │ └─────────────┘ │    │ └─────────────┘ │    │ └─────────────┘ │
 │ ┌─────────────┐ │    │ ┌─────────────┐ │    │ ┌─────────────┐ │
-│ │ Local DB    │ │    │ │ AWS S3      │ │    │ │ Analytics   │ │
+│ │ Local DB    │ │    │ │ GCS/S3      │ │    │ │ Analytics   │ │
 │ │ (SQLite)    │ │    │ │ (Storage)   │ │    │ └─────────────┘ │
 │ └─────────────┘ │    │ └─────────────┘ │    │                 │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
@@ -58,8 +58,8 @@ A comprehensive, production-grade eye-tracking application designed to promote w
 - **Python 3.11+**
 - **Node.js 18+**
 - **PostgreSQL 14+**
-- **AWS Account** (for cloud features)
 - **Google OAuth2 Credentials**
+- *(Optional)* **AWS Account** (legacy S3 support)
 
 ### Installation
 
@@ -73,10 +73,13 @@ A comprehensive, production-grade eye-tracking application designed to promote w
    ```bash
    # Install Python dependencies
    pip install -r requirements.txt
+   # Ensure matplotlib is installed for desktop analytics and packaging
+   pip install matplotlib==3.9.2
    
    # Set up Google OAuth credentials
    cp configs/credentials.json.example configs/credentials.json
    # Edit configs/credentials.json with your Google OAuth2 credentials
+   # For GCS set in .env: CLOUD_PROVIDER=gcs, GCS_BUCKET=your-bucket, GCS_CREDENTIALS_FILE=configs/credentials.json
    ```
 
 3. **Install Backend**
@@ -107,11 +110,11 @@ A comprehensive, production-grade eye-tracking application designed to promote w
    - Create OAuth2 credentials
    - Download and place in `configs/credentials.json`
 
-2. **AWS Configuration**
-   - Create S3 bucket for data storage
-   - Set up RDS PostgreSQL instance
-   - Configure IAM roles and permissions
-   - Update environment variables
+2. **Cloud Storage Configuration**
+   - Create GCS bucket for data storage (recommended)
+   - Place service account JSON in `configs/credentials.json`
+   - Set env: `CLOUD_PROVIDER=gcs`, `GCS_BUCKET=<bucket>`, `GCS_CREDENTIALS_FILE=configs/credentials.json`
+   - *(Optional legacy)* Create S3 bucket & set `CLOUD_PROVIDER=aws` plus AWS_* vars
 
 3. **Database Setup**
    ```bash
@@ -137,6 +140,8 @@ A comprehensive, production-grade eye-tracking application designed to promote w
 3. **Start Desktop Application**
    ```bash
    python src/desktop_app/main.py
+   # To run in headless mode (for CI/dev only):
+   python src/desktop_app/main.py --headless
    ```
 
 ## 📊 Usage
@@ -157,8 +162,68 @@ A comprehensive, production-grade eye-tracking application designed to promote w
 3. **Settings**
    - Adjust blink sensitivity
    - Configure sync intervals
-   - Set privacy preferences
-   - Manage notifications
+
+## 📦 Packaging & Distribution (Desktop)
+
+Bundle the PyQt6 desktop application using PyInstaller. The spec file is hardened to exclude secrets and unnecessary test modules. Ensure you have not added credentials.json to the bundle.
+
+### Windows
+```powershell
+pyinstaller --noconfirm --clean wellness_app.spec
+```
+
+### macOS
+```bash
+pyinstaller --noconfirm --clean wellness_app.spec
+```
+
+### Linux
+```bash
+pyinstaller --noconfirm --clean wellness_app.spec
+```
+
+Artifacts will appear under `dist/WellnessAI.exe` and `dist/WellnessAI_dist/`. Create the runtime `data/` directory beside the executable on first run; it is not bundled.
+
+#### Troubleshooting Desktop Packaging
+- If the packaged app fails to start or exits immediately:
+   - Ensure `matplotlib` is installed in your Python environment before building.
+   - Remove any old `dist/` and `build/` folders before rebuilding.
+   - Check `logs/wellness_ai.log` for sentinel and error messages.
+   - If you see a missing module error (e.g., `No module named 'matplotlib'`), run `pip install matplotlib==3.9.2` and rebuild.
+- Headless mode is only available for development/CI and is disabled in packaged builds unless explicitly enabled with `--headless`.
+- Only one executable (`WellnessAI.exe`) is produced; any previous workaround EXEs are removed.
+
+### Minimal CI Matrix Snippet (GitHub Actions)
+Add to a workflow (e.g. `.github/workflows/package.yml`) after secrets and cache setup:
+```yaml
+name: desktop-package
+on: [workflow_dispatch]
+jobs:
+   build:
+      strategy:
+         matrix:
+            os: [ubuntu-latest, windows-latest, macos-latest]
+      runs-on: ${{ matrix.os }}
+      steps:
+         - uses: actions/checkout@v4
+         - uses: actions/setup-python@v5
+            with:
+               python-version: '3.11'
+         - name: Install deps
+            run: |
+               pip install --upgrade pip
+               pip install -r requirements.txt
+               pip install matplotlib==3.9.2
+         - name: Package desktop app
+            run: pyinstaller --noconfirm --clean wellness_app.spec
+         - name: Archive artifact
+            uses: actions/upload-artifact@v4
+            with:
+               name: WellnessAI-${{ matrix.os }}
+               path: dist/WellnessAI_dist/**
+```
+
+> NOTE: Do not commit or embed `configs/credentials.json` in the bundle. Provide credentials at runtime via environment variables or secure secret mount.
 
 ### Web Dashboard
 
@@ -195,7 +260,7 @@ wellness-at-work/
 ├── backend/                  # Flask REST API
 │   ├── app.py               # Main application
 │   ├── models.py            # Database models
-│   └── storage.py           # AWS S3 integration
+│   └── storage.py           # GCS / AWS S3 dual-provider integration
 ├── web_dashboard/           # React web application
 │   ├── src/
 │   │   ├── components/      # React components
@@ -219,7 +284,7 @@ wellness-at-work/
 
 2. **Run Tests**
    ```bash
-   # Python tests
+   # Python tests (includes GCS/S3 fallback & API tests)
    python -m pytest tests/
    
    # JavaScript tests
@@ -314,6 +379,16 @@ The project includes comprehensive CI/CD pipelines:
 - **Consent Management**: Granular consent controls
 - **Data Retention**: Configurable retention policies
 
+### Storage & Fallback Hardening
+
+- **Primary Cloud**: Google Cloud Storage (GCS) used when `CLOUD_PROVIDER=gcs` and bucket credentials available.
+- **Automatic Fallback**: On any cloud upload failure events are committed to SQLite and appended to `data/local.json` ensuring no data loss.
+- **Credential Isolation**: Service account JSON loaded only from path specified via `GOOGLE_APPLICATION_CREDENTIALS` / `GCS_CREDENTIALS_FILE`; file not embedded in source.
+- **Least Privilege**: Service account should have `storage.objectAdmin` limited to the configured bucket only; no project-wide admin roles.
+- **Integrity**: Each blink event stored as immutable JSON object (`events/<user>/<uuid>.json`) enabling audit and replay.
+- **Graceful Degradation**: Analytics endpoints continue operating from DB/local cache if cloud unavailable.
+- **GDPR Alignment**: Fallback files participate in the same deletion routines ensuring user erasure requests purge both cloud and local copies.
+
 ## 📈 Monitoring & Analytics
 
 ### Application Monitoring
@@ -386,10 +461,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📊 Project Status
 
-- **Version**: 1.0.0
+- **Version**: 1.1.0
 - **Status**: Production Ready
-- **Last Updated**: January 2024
-- **Next Release**: Q2 2024
+- **Last Updated**: August 2025
+- **Next Release**: Q4 2025
 
 ---
 
